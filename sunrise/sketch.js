@@ -1,3 +1,8 @@
+
+// Quetzal vs Witzi
+// (138, 43, 226) Purple rain (intenta entenderlo)
+// (230, 230, 250) // background
+
 var groundHeight;
 var mountain1;
 var mountain2;
@@ -11,7 +16,6 @@ var darkness;
 var x
 var y
 var darts
-//var raton
 var queso
 var quetzal
 var cloud
@@ -20,6 +24,7 @@ var cloud3
 var witzi
 var witzilon
 var pino
+var drops = [];
 
 function preload()
 {
@@ -36,18 +41,12 @@ function setup()
     console.log(random());
 	//set the groundHeight proportional to the canvas size
 	groundHeight = (height / 3) * 2;
+    
+    for (var i = 0; i < 500; i++) {
+    drops[i] = new Drop();
+  }
 
 	//initalise the mountain objects with properties to help draw them to the canvas
-//	pino = {
-//        trunkPosx: 130, 
-//        trunkPosy: 400,
-//        x1:   
-//        y1:
-//        x2:
-//        y2:
-//        x3:
-//        y3:
-//    }
     
     mountain1 = {
 		x: 400,
@@ -162,18 +161,16 @@ function setup()
 
 function draw()
 {
-	//TASK: update the values for the moons brightness, the sun's position and the darkness.
-	//You can either map this to the mouse's location (i.e. the futher left the mouse is the more daylight) or you can just change the values gradually over time.
-
-
     
 	//draw the sky
 	background(150, 200, 255);
-	noStroke();
     
-    //image(queso, quetzal.x, quetzal.y);
-    
-    
+    for (var i = 0; i < drops.length; i++) {
+    drops[i].fall();
+    drops[i].show();
+  }
+
+	noStroke();    
     // Cloud settings
     
     fill(0, 0, 0, max(0 + mouseX/4));
@@ -213,15 +210,6 @@ function draw()
 		mountain2.x + (mountain2.width / 2), mountain2.y - mountain2.height);
     
     //TASK: You can draw the tree yourself
-        //draw the tree
-//    	tree = {
-//        trunkPosx: 130, 
-//        trunkPosy: 400, 
-//		trunkWidth: 40,
-//        trunkMiddle: 150,
-//		trunkHeight: 150,
-//
-//	};
     
     fill(100,70,45)
     rect(tree.trunkPosx, tree.trunkPosy, tree.trunkWidth, tree.trunkHeight);
@@ -240,15 +228,7 @@ function draw()
     vertex(tree.trunkPosx-50+35, tree.trunkPosy);
     endShape();
     console.log(vertex);
-    
-//        tree2 = {
-//        trunkPosx: 500, 
-//        trunkPosy: 410, 
-//		trunkWidth: 40,
-//        trunkMiddle: 520,
-//		trunkHeight: 150,
-//        scale: 0.8,
-//	};
+
         fill(100,70,45)
     rect(tree2.trunkPosx, tree2.trunkPosy, tree2.trunkWidth, tree2.trunkHeight);
     fill(0,200,20);
@@ -314,21 +294,6 @@ function draw()
     noStroke();
     console.log(mouseX, mouseY);
     
-//            tree5 = {
-//        trunkPosx: 210, 
-//        trunkPosy: 410, 
-//		trunkWidth: 40,
-//        trunkMiddle: 240,
-//		trunkHeight: 150,
-//
-//	};
-//    fill(100,70,45)
-//    rect(tree5.trunkPosx, tree5.trunkPosy, tree5.trunkWidth, tree5.trunkHeight);
-//    fill(10,240,120);
-//    var 
-//    triangle
-//    
-    
     //TASK: make the scene dark by drawing a rectangle that covers the whole canvas.
 	//Use the alpha value of fill to determine how dark to make it 
     var raton
@@ -356,15 +321,20 @@ function draw()
           
   } else {image(queso, quetzal.x, quetzal.y); 
           image(witzi, witzilon.x, witzilon.y);
-                      fill(100,70,45)
-
-    
+                      fill(100,70,45);
          
          }
 
   print(mouseIsPressed);
 }
     
-    
-    
+
+
+
+
+
+
+
+
+
 
