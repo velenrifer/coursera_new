@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    background-color: mediumpurple;
+}
+
+p {
+	padding: 10px;
+	margin: 0;
+}
+
+.container {
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+/** header **/ 
+
+#header-nav {
+  border: 0;
+  background-color: #FC5F06;
+  color: #FFFFFF;
+}
+
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: Sdimgray;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: brown;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.navbar-collapse {
+    border-top: 0;
+}
+
+.navbar-brand a:hover a:active S{
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #FF33FF;
+}
+
+#nav-list {
+    background-color: coral;
+}
+
+#nav-list a {
+    font-weight: bolder;
+    color: currentColor;
+    font-size: 1.2em;
+}
+
+#nav-list a:hover {
+    color: #202020;
+    background-color: #fce29e;
+}
+
+
+.navbar-header button.nav-toggle, .navbar-header .icon-bar {
+    border: 1px solid #7d1913；
+}
+
+#nav-list {
+  color: white;
+}
+
+hr {
+  border-color: black;
+}
+
+.item {
+  color: currentColor;
+  font-size: 1.2em;
+}
+
+/**Final del Header**/
+
+/**Inicio de la Pagina Principal**/
+
+#main-content {
+    width: 92%;
+    margin-bottom: 30px;
+}
+
+#main-content h2 {
+    font-size: 2.9em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#main-content h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom：1em;
+}
+
+#first-title, #second-title, #third-title {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  background-color:firebrick;
+  box-shadow: 0 0 80px #33FFFF;
+}
+
+/**Final de la Pagina Principal**/
+
+/**Responsive**/
