@@ -29,7 +29,7 @@ var allCategoriesUrl =
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl =
-  "https://wushu-xuexiao.herokuapp.com/menu_items.json?category="; // Aquí va la url modificada con en contenido deseado
+  "https://xuexiao-data.herokuapp.com/menu_items.json?category="; // Aquí va la url modificada con en contenido deseado
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 
