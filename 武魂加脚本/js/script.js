@@ -25,11 +25,11 @@ var dc = {};
 
 var homeHtml = "snippets/home-snippet.html";
 var allCategoriesUrl =
-  "data/data.json";
+  "https://wushu-data.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl =
-  "https://xuexiao-data.herokuapp.com/menu_items.json?category="; // Aquí va la url modificada con en contenido deseado
+  "https://wushu-data.herokuapp.com/menu_items.json?category="; // Aquí va la url modificada con en contenido deseado
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 

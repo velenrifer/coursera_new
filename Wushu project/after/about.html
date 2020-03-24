@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>武术精神与文化中心</title>
+    <link rel="icon" href="images/school-logo-favicon.png" type="image/png" sizes="16x16">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/restaurant.css">
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+  <body ng-app="restaurant" ng-strict-di>
+
+    <!-- Fixed position loading indicator -->
+    <loading class="loading-indicator"></loading>
+
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img" alt="Logo image"></div>
+            </a>
+
+            <div class="navbar-brand">
+             <a href="index.html"><h1>武术精神与文化中心</h1></a>
+              <p>
+              <img src="images/star-k-logo.png" alt="Kosher certification">
+           <span>Study wushu in china</span>
+              </p>
+            </div>
+
+            <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li id="navHomeButton" class="visible-xs">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span> Home</a>
+              </li>
+              <li id="navMenuButton" ui-sref-active="active">
+                <a href="menu-categories.html">
+                  <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> Teachers</a>
+              </li>
+              <li>
+                <a href="about.html">
+                  <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+              </li>
+              <li>
+                <a href="media.html">
+                  <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Media</a>
+              </li>
+              <li id="phone" class="hidden-xs">
+                <a href="tel: +86-135-8188-5935">
+                      <span>ID : PACOCHI</span></a><div>* OFFICIAL WECHAT</div>
+              </li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div><!-- .container -->
+      </nav><!-- #header-nav -->
+    </header>
+
+    <div id="call-btn" class="visible-xs">
+      <a class="btn" href="tel: +86-135-8188-5935">
+        <span class="glyphicon glyphicon-earphone"></span>
+         +86-135-8188-5935
+      </a>
+    </div>
+    <div id="xs-deliver" class="text-center visible-xs">* Contact us</div>
+
+      
+      <div id="about-view" class="container">
+  <h2 class="text-center">Acerca de nuestro centro</h2>
+  <div class="text-center">
+    <p>Somos una escuela con cede en México y en China con aplia trayectoria, entrenadores serios y responsables. Somos un grupo de artistas marciales de linaje formados en las tradiciones Chinas.</p>
+
+    <p>
+    Se parte de nosotros, contactanos!
+    </p>
+
+    <p>
+      Para darte una muestra, te dejamos un breve video de muestra:
+      <div class="embed-responsive embed-responsive-16by9">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/6DYy5N2-qSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </p>
+
+    <p>
+     Nuestra escuela tiene sede en Mexico y China
+        <ul>
+          <li>Centro Mexicano de Cultura y Artes Marciales de China en la Ciudad de México.</li>
+          <li>武术精神与文化中心 en Beijing, China.</li>
+        </ul>
+    </p>
+
+    <p class="aside">* Acercate a nosotros y vuelvete un guerrero marcial.
+    </p>
+    
+  </div>
+
+</div>
+
+   <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          Capital University Of Physical Education and Sports<br>
+          Beijing, China, 100089
+          <p>* Contac us for more information.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"狂风吹不断柳枝"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright 2020</div>
+    </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
